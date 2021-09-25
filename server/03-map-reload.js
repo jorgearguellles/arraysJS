@@ -49,11 +49,13 @@ console.log("Totals:",rta1_total);
 // Así se puede agregar un atributo a cada objeto del array, sin mutar la referencia en memoría de dicho objeto
 const rta3 = orders.map(item => {
   return {
-    ...item,
-    tax: 0.19
+    ...item, //Aquí copiamos cada elemento
+    tax: 0.19 //Aquí le agregamos ese nuevo atributo a la copia de cada objeto del aray. Así no mutamos la referencia en memoria
   };
 });
 console.log("Original:",orders)
 console.log("rta3:",rta3);
+
+
 
 
