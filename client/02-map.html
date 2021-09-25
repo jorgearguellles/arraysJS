@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Array Method</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    const products = [
+      { title: "Burguer", price: 10},
+      { title: "Pizza", price: 20},
+      { title: "Sandwich", price: 30}
+    ];
+    const app = document.getElementById("app");
+    const list = products.map(product => {
+      return `<li> ${product.title} - ${product.price}</li>`;
+    })
+    app.innerHTML = list.join("");
+  </script>
+</body>
+</html>
