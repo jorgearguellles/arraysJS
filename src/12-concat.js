@@ -27,7 +27,7 @@ console.log("Usando contact():", array5);
  console.log("Usando Spread Operator:", array6);
 
  /**
-  * Si quiero modifica el Array Original, se puede hacer así:
+  * Si quiero modifica el Array Original, se puede hacer así: ========================
   */
 
  array1.push(array2); 
