@@ -33,11 +33,6 @@ console.log("Mis productos:", misProductos)
 
 // 3. Eliminación de un array sin mutar el Original
 
-const prodIndex = products.findIndex( p => p.id === '🍔');
-if(prodIndex !== -1){
-  misProductos.push(products[prodIndex]);
-  products.splice(prodIndex,1);
-}
 
 console.log("Estado ========= 3");
 console.log("Productos:", products);
